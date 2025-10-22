@@ -227,6 +227,41 @@ const Index = () => {
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-secondary mb-4">Фотогалерея</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">Наше оборудование и рабочий процесс</p>
+          <div className="grid md:grid-cols-3 gap-8 mb-20">
+            <div className="rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
+              <img 
+                src="https://cdn.poehali.dev/projects/7a057220-fcba-4497-909a-2dda109a6269/files/1f8b6a8e-6124-4e5b-ab0e-e63ea5c5b433.jpg" 
+                alt="Сварочное оборудование" 
+                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+              />
+              <div className="p-4 bg-white">
+                <p className="text-center font-semibold text-secondary">Сварочные работы TIG/Аргон</p>
+              </div>
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
+              <img 
+                src="https://cdn.poehali.dev/projects/7a057220-fcba-4497-909a-2dda109a6269/files/6a051e8a-a00f-4bb6-bd87-30275703ac18.jpg" 
+                alt="Ремонт дисков" 
+                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+              />
+              <div className="p-4 bg-white">
+                <p className="text-center font-semibold text-secondary">Ремонт и восстановление дисков</p>
+              </div>
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
+              <img 
+                src="https://cdn.poehali.dev/projects/7a057220-fcba-4497-909a-2dda109a6269/files/ce6cc317-a72c-4995-8033-537e644ab148.jpg" 
+                alt="Шиномонтаж" 
+                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+              />
+              <div className="p-4 bg-white">
+                <p className="text-center font-semibold text-secondary">Шиномонтажные работы</p>
+              </div>
+            </div>
+          </div>
+
           <h2 className="text-4xl font-bold text-center text-secondary mb-4">Наши услуги</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">Полный спектр работ по ремонту дисков и шин</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
