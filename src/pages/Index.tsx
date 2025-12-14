@@ -98,7 +98,7 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
             <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 drop-shadow-lg">Автосервис и шиномонтаж</h1>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 drop-shadow-lg">Асса тигПро</h1>
               <p className="text-lg md:text-xl text-white/90">Сварочные работы TIG/Аргон. Ремонт и восстановление любой сложности</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
