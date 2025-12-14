@@ -99,7 +99,7 @@ const Index = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
             <div className="flex-1 text-center lg:text-left">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 drop-shadow-lg">Асса тигПро</h1>
-              <p className="text-lg md:text-xl text-white/90">Сварочные работы TIG/Аргон. Ремонт и восстановление любой сложности</p>
+              <p className="text-lg md:text-xl text-white/90">Автосервис и шиномонтаж. Сварочные работы TIG/Аргон</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
               <Button onClick={handlePhone} size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold gap-2 shadow-lg hover:shadow-xl transition-all whitespace-nowrap">
