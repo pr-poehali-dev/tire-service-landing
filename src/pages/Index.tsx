@@ -119,8 +119,24 @@ const Index = () => {
         </div>
       </header>
 
-      <section className="py-16 bg-gradient-to-b from-white to-muted/30">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-gradient-to-b from-white to-muted/30 relative overflow-hidden">
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 opacity-5 pointer-events-none">
+          <svg viewBox="0 0 200 200" fill="currentColor" className="text-secondary">
+            <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" strokeWidth="4"/>
+            <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" strokeWidth="2"/>
+            <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" strokeWidth="2"/>
+            <circle cx="100" cy="100" r="20" fill="currentColor"/>
+            {[...Array(8)].map((_, i) => {
+              const angle = (i * 45 - 90) * Math.PI / 180;
+              const x1 = 100 + 25 * Math.cos(angle);
+              const y1 = 100 + 25 * Math.sin(angle);
+              const x2 = 100 + 85 * Math.cos(angle);
+              const y2 = 100 + 85 * Math.sin(angle);
+              return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="currentColor" strokeWidth="3"/>;
+            })}
+          </svg>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-4xl font-bold text-secondary mb-6">О нас</h2>
